@@ -116,11 +116,51 @@
             margin-bottom: 100px;
             text-align: center;
         }
-        .box2 ul{}
-        .box2 ul li{}
-        .box2 ul li a{}
-        .box2 ul li img{}
-        .box2 ul li p{}
+        .box2 ul{
+            width: 800px;
+            margin: 0 auto;
+            display: flex;
+        }
+        .box2 ul li{
+            flex:1;
+            padding: 10px;
+            background: #ccf;
+        }
+        .box2 ul li + li{
+            margin-left: 10px;
+        }
+        .box2 ul li img{
+            height: 300px;
+            object-fit: cover;
+        }
+        .box2 ul li p{
+            display: block;
+            background: #fff;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .box3{
+            padding: 100px 0;
+            background: #fcc;
+            display: flex;
+            justify-content: center;
+        }
+        .box3 ul{
+            width: 800px;
+        }
+        .box3 ul li{
+            height: 100px;
+            background: #fff;
+            margin-bottom: 10px;
+        }
+        .box3 ul li:last-child{
+            margin-bottom: 0;
+        }
+
+        footer{
+            height: 100px;
+            background: #ccf;
+        }
     </style>
 </head>
 
@@ -148,19 +188,19 @@
             <ul>
                 <li>
                     <a href="">
-                        <img src="" alt="">
+                        <img src="./img.jpg" alt="">
                         <p>내용 쓰는 공간</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="" alt="">
+                        <img src="./img.jpg" alt="">
                         <p>내용 쓰는 공간</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="" alt="">
+                        <img src="./img.jpg" alt="">
                         <p>내용 쓰는 공간</p>
                     </a>
                 </li>
@@ -175,6 +215,8 @@
             </ul>
         </section>
     </main>
+
+    <footer>footer</footer>
 </body>
 
 </html>
