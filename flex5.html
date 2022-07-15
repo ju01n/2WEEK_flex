@@ -45,21 +45,20 @@
             width: calc(50% - 5px);
         }
         .box1 div:last-child{
-            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .box1 .btn{
-            position: absolute;
             width: 50px;
             height: 50px;
-            top: 50%;
-            transform: translateY(-50%);
             background: #ffc;
         }
         .box1 .btn.prev{
-            left: 10px;
+            margin-left: 10px;
         }
         .box1 .btn.next{
-            right: 10px;
+            margin-right: 10px;
         }
 
         .bar{
@@ -108,20 +107,20 @@
             margin: 10px 0;
             background: #cfc;
             padding: 10px;
-            display: flex;
-            
+            overflow: hidden;
         }
         .box3 .title{
             line-height: 50px;
         }
 
         .box3 .navi{
-            display: flex;
+            float: right;
         }
         .box3 .navi a{
             background: #fff;
             width: 50px;
             height: 50px;
+            float: left;
         }
 
         .box4{
@@ -171,7 +170,7 @@
         <div class="inner">
             <div class="box1">
                 <div>left</div>
-                <div>right
+                <div>
                     <a href="" class="btn prev">이전</a>
                     <a href="" class="btn next">다음</a>
                 </div>
