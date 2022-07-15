@@ -42,17 +42,25 @@
         .box1 div{
             height: 200px;
             background: #ccc;
-            width: calc(50% - 5px); 
+            width: calc(50% - 5px);
+        }
+        .box1 div:last-child{
+            position: relative;
         }
         .box1 .btn{
+            position: absolute;
             width: 50px;
             height: 50px;
+            top: 50%;
             transform: translateY(-50%);
             background: #ffc;
         }
         .box1 .btn.prev{
+            left: 10px;
         }
-        .box1 .btn.next{}
+        .box1 .btn.next{
+            right: 10px;
+        }
 
         .bar{
             height: 100px;
@@ -108,7 +116,7 @@
         }
 
         .box3 .navi{
-            display: flex;            
+            display: flex;
         }
         .box3 .navi a{
             background: #fff;
